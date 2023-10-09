@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/42b0819548.js" crossorigin="anonymous"></script>
+  <title>Inicio | Gestión de trabajos finales</title>
+  <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header-superior">
+      <!-- Write your comments here -->
+      <div class="logos">
+        <img src="../img/logo-unca.png" alt="unca">
+        <img src="../img/LogoFTCA.png" alt="tecno">
+      </div>
+      
+      <h2>LABORATORIO 2: MODELOS</h1>
+
+      <div class="buscador">
+        <input type="search" name="" placeholder="¿Qué estás buscando?">
+      </div>
+
+    </div>
+
+    <div class="container-menu">
+      
+      <div class="menu">
+        <input type="checkbox" name="" id="check__menu">
+        <label id="#label__Check" for="check__menu">
+          <i class="fa-solid fa-bars icon__menu"></i>
+        </label>
+        
+          <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Registrar</a>
+            <ul>
+              <li><a href="./pages/2_registroCSTF.html">Integrantes de la CSTF</a></li>
+              <li><a href="./pages/2_registroTE.html">Integrantes del tribunal evaluador</a></li>
+              <li><a href="./pages/inscripcionalumno.html">Alumnos</a></li>
+              <li><a href="./pages/punto1.html">Proyecto de trabajo final</a></li>
+              <li><a href="#">Movimientos y estados de un PTF</a></li>
+              <li><a href="#">Informes y evaluciones</a></li>
+            </ul>
+            </li>
+            <li><a href="./pages/estadisticas.html">Informes</a></li>
+            <li><a href="#">Evaluación formal</a></li>
+          </ul>
+          </nav>
+      </div>
+     
+    </div>
+
+  </header>
+
+  <main>
+    <h2>METODO CONGRUENCIAL MULTIPLICATIVO</h2>
+
+    <div>
+      <form id="form" action="#" method="post">
+        <h3>Complete los siguientes datos:</h3>
+
+        <label for="semilla">Valor de la semilla:</label>
+        <input type="number" id="semilla" required name= "semilla" placeholder="Ingrese valor de la semilla" min="0" value="4321">
+        <br>
+
+        <label for="valorA">Valor de A:</label>
+        <input type="number" id="valorA" required name="valorA" placeholder="Ingrese el valor de a" min="0" value="7733">
+        <br>
+
+        <label for="valorM">Valor de M:</label>
+        <input type="number" id="valorM" required name="valorM" placeholder="Ingrese el valor de M" min="0" value="9038">
+        <br>
+  
+        <label for="valorC">Valor de C:</label>
+        <input type="number" id="valorC" required name="valorC" placeholder="Ingrese el valor de c" min="0" value="1709">
+        <br>
+  
+        <label for="registros">Numeros de Registros:</label>
+        <input type="number" id="registros" name="registros" placeholder="Ingrese numeros de registros" min="0" value="1500">
+        <br>
+
+        <input class = "boton" type="submit" name="guardar" value="GENERAR NUMEROS">
+      </form>
+    
+      <table id="tabla">
+        <tr id="nombreColumnas">
+          <th id="tf-1" value="0">Orden</th>
+          <th>X<sub>n</sub></th> 
+          <th>a * X<sub>n</sub></th>
+          <th>a * X + c</th>
+          <th>(a * X + c) mod m</th>
+          <th>U<sub>i</sub></th>
+        </tr>
+      </table><br>
+
+    </div>   
+
+    <boton class="boton bt-simu" id = "boton">SIMULAR</boton>
+
+    <div class="simu" id ="simu">
+      <h2 id="problema">SIMULACION</h2>
+      <table id="tablaSimulacion">
+        <tr id="nombreColumnas">
+          <th>Dia N°</th>
+          <th>Cant. de panes integrales vendidos</th> 
+          <th>Cant. de panes de centeno vendidos</th>
+          <th>Cant. de panes de maiz vendidos</th>
+          <th>Stock</th>
+        </tr>
+      </table><br>
+      <h2>Resultados de la Simulacion:</h2>
+    </div>
+  </main>
+
+  <footer> 
+    <h3>&copy LABORATORIO 2: MODELOS</h3> 
+    <h4>UNCa | Facultad de Tecnologia y Ciencias Aplicadas</h4>
+  </footer>
+
+  <script src="../js/simulacion.js"></script>
+</body>
+
+</html>
